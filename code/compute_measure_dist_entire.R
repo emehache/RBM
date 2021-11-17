@@ -14,8 +14,8 @@ setwd("~/Dropbox/RBM/manuel")
 # 
 # rm(trayectorias)
 
-source('dist_medida.R')
-source('on_off.R')
+source('code/auxiliar_functions/measure_dist.R')
+source('code/auxiliar_functions/on_off.R')
 
 
 # -------------------------------------------------------------------------
@@ -49,7 +49,7 @@ conjunto <- cuadrado[as.logical(index*index2),]
 
 ralpha <- .4
 
-archivos <- list.files('objetos_r/trayectorias', full.names = TRUE)
+archivos <- list.files('data/trajectories', full.names = TRUE)
 
 t0 <- Sys.time()
 sapply(archivos, function(ar){

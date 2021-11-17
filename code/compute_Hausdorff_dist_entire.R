@@ -5,10 +5,8 @@ sapply(paquetes,require,character.only=TRUE)
 # setwd("~/Dropbox/Documentos/Tesis Ingemat/RBM Manuel/manuel")
 setwd("~/Dropbox/RBM/manuel")
 
-sourceCpp('rbmd.cpp')
-sourceCpp('distPaQ.cpp')
-source('graficar.R')
-source('on_off.R')
+sourceCpp('code/auxiliar_functions/hausdorff_dist.cpp')
+source('code/auxiliar_functions/on_off.R')
 
 
 # -------------------------------------------------------------------------
@@ -41,7 +39,7 @@ index2 <- (cuadrado[,1])^2/a^2+(cuadrado[,2])^2/b^2 <= 1
 conjunto <- cuadrado[as.logical(index*index2),]
 
 
-archivos <- list.files('objetos_r/trayectorias', full.names = TRUE)
+archivos <- list.files('data/trajectories', full.names = TRUE)
 
 t0 <- Sys.time()
 sapply(archivos, function(file){
