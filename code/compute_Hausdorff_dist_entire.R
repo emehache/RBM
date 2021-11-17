@@ -67,7 +67,7 @@ sapply(archivos, function(file){
   }) %>% rbindlist(idcol = 'rep')
   
   
-  readr::write_rds(res, sprintf('r_objects/hausdorff_distances/entire_model-%s-%s.rds',N,h))
+  readr::write_rds(res, sprintf('r_objects/hausdorff_distances/entire_model_%s-%s.rds',N,h))
   
 })
 t1 <- Sys.time()

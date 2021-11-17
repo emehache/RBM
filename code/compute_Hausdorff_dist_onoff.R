@@ -91,7 +91,7 @@ sapply(archivos, function(a){
     .[, !'rn']
   
   
-  readr::write_rds(dist, sprintf('objetos_r/distH/cadena_%s-%s.rds',N,h))
+  readr::write_rds(dist, sprintf('r_objects/hausdorff_distances/onoff_model_%s-%s.rds',N,h))
   
 })
 t1 <- Sys.time()

@@ -90,7 +90,7 @@ sapply(archivos, function(ar){
     .[, !'rn']
   
   
-  readr::write_rds(dist, sprintf('objetos_r/dist_medida/cadena_on_off_%s.rds',h))
+  readr::write_rds(dist, sprintf('r_objects/measure_distances/onoff_model_%s.rds',h))
   
 })
 t1 <- Sys.time()

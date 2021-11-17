@@ -76,7 +76,7 @@ sapply(archivos, function(ar){
   }) %>% rbindlist(idcol = 'rep')
   
   
-  readr::write_rds(res, sprintf('objetos_r/dist_medida/dist_entera-%s.rds',h))
+  readr::write_rds(res, sprintf('r_objects/measure_distances/entire_model_%s.rds',h))
   c
 })
 t1 <- Sys.time()
