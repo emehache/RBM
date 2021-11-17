@@ -1,9 +1,9 @@
 # RBM
 
-## Ejecución
+## Simulated data
 
-#### 1 `simulaciones.R n_rep=50 N=1e5`
-* (valores por defecto) genera las trayectorias de largo `N` y `h = {0.001, 0.002, 0.003}`, y las guarda en `objetos_r/trayectorias/trayectoria_%N, %h.rds`. En cada objeto hay `n_rep` trayectorias guardadas.
+#### 1 Simulate data.  `Rscript simulations.R n_rep=50 N=1e5`
+* (default values) generates trajectories of length `N` and step `h = {0.001, 0.002, 0.003}`. Simulated data is stored in `objetos_r/trayectorias/trayectoria_%N_%h.rds`. In every `.rds` file there are stored `n_rep` trajectories.
 
 #### 2 Cálculo de distancias de Hausdorff
 
