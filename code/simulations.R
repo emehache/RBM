@@ -63,7 +63,7 @@ trayectorias <-
 names(trayectorias) <- apply(param,1,paste,collapse='_')
 
 invisible(sapply(names(trayectorias), function(nm){
-  readr::write_rds(trayectorias[[nm]], sprintf('data/trajectories/trayectoria_%s.rds',nm))
+  readr::write_rds(trayectorias[[nm]], sprintf('data/trajectories/trayectory_%s.rds',nm))
 }))
 
 t1 <- Sys.time()
